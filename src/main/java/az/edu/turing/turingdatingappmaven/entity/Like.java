@@ -13,10 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Table(name = "LIKES")
 
-public class LikeEntity {
+public class Like {
     @Id
     private Long id;
-    private Boolean reaction;
     private Long likeSenderId;
     private Long likeReceiverId;
 

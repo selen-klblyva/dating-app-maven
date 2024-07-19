@@ -1,15 +1,17 @@
 package az.edu.turing.turingdatingappmaven.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class UserEntity {
+@Entity
+public class User {
+    @Id
     private Long id;
     private String username;
     private String password;
