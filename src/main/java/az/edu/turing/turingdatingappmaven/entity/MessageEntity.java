@@ -10,8 +10,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class MessageEntity {
     private String message;
-    private long id;
+    private Long id;
     private LocalDate date;
-    private long senderId;
-    private long receiverId;
+    private Long senderId;
+    private Long receiverId;
 }
