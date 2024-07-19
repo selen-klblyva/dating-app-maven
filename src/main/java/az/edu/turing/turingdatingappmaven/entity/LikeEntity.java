@@ -1,6 +1,7 @@
 package az.edu.turing.turingdatingappmaven.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,8 +14,11 @@ import lombok.NoArgsConstructor;
 @Table(name = "LIKES")
 
 public class LikeEntity {
-    private long id;
+    @Id
+    private Long id;
     private Boolean reaction;
-    private long likeSenderId;
-    private long likeReceiverId;
+    private Long likeSenderId;
+    private Long likeReceiverId;
+
+
 }

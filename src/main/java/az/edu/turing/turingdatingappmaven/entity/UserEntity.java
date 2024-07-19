@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @AllArgsConstructor
 
 public class UserEntity {
-    private int id;
+    private Long id;
     private String username;
     private String password;
     private String fullName;
